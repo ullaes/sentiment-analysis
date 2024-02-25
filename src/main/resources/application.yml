@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+
+ai:
+  ollama:
+    url: "http://localhost:11434"
+    options:
+      model: "llama2"
+      temperature: 0.9f
