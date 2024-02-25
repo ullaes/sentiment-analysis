@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class ChatService(
-    val client : OllamaClient
+    private val client : OllamaClient
 ) {
 
     private val promptTemplate = PromptTemplate("""

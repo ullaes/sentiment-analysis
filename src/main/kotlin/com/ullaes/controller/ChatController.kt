@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class ChatController(
-    val chatService: ChatService
+    private val chatService: ChatService
 ) {
 
     @PostMapping("/chat")

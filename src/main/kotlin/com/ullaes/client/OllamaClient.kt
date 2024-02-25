@@ -14,7 +14,7 @@ class OllamaClient(
     properties: OllamaClientProperties
 ) {
 
-    final var client = OllamaChatClient(OllamaApi(properties.url))
+    private final var client = OllamaChatClient(OllamaApi(properties.url))
 
     init {
         val options = OllamaOptions.create()
