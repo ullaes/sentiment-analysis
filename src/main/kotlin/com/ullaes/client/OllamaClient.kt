@@ -20,6 +20,9 @@ class OllamaClient(
         val options = OllamaOptions.create()
         options.model = properties.options.model
         options.temperature = properties.options.temperature
+        options.frequencyPenalty = 0.0F
+        options.presencePenalty = 0.0F
+        options.topP = 1.0F
         client.withDefaultOptions(options)
     }
 

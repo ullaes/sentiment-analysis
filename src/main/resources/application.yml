@@ -9,5 +9,5 @@ ai:
   ollama:
     url: "http://localhost:11434"
     options:
-      model: "llama2"
-      temperature: 0.9f
+      model: "openchat"
+      temperature: 0.3f

@@ -13,9 +13,9 @@ class ChatService(
 ) {
 
     private val promptTemplate = PromptTemplate("""
-        Analyze the sentiment of the following text '{text}'. 
+        What is the sentiment of the following text:'{text}'? 
         Is it positive, negative, or neutral? 
-        Justify your analysis with examples from the text and justify your conclusion.{format}"
+        Specify the degree of confidence as a number from 0.0 to 1.0.{format}"
     """)
     private val outputParser = BeanOutputParser(SentimentAnalysisResult::class.java)
 
