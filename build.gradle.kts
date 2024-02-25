@@ -23,9 +23,8 @@ dependencies {
     // Spring
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.ai:spring-ai-openai:0.8.0-SNAPSHOT")
-    implementation("org.springframework.ai:spring-ai-huggingface:0.8.0-SNAPSHOT")
-    implementation("org.springframework.ai:spring-ai-transformers-spring-boot-starter:0.8.0-SNAPSHOT")
+    implementation("org.springframework.ai:spring-ai-ollama-spring-boot-starter:0.8.1-SNAPSHOT")
+    implementation("org.springframework.ai:spring-ai-transformers-spring-boot-starter:0.8.1-SNAPSHOT")
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
