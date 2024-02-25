@@ -1,6 +1,7 @@
 package com.ullaes.client
 
 import com.ullaes.configuration.OllamaClientProperties
+import org.springframework.ai.chat.Generation
 import org.springframework.ai.chat.prompt.Prompt
 import org.springframework.ai.ollama.OllamaChatClient
 import org.springframework.ai.ollama.api.OllamaApi
@@ -22,9 +23,8 @@ class OllamaClient(
         client.withDefaultOptions(options)
     }
 
-    fun sendMessage(message: String): String {
-        val prompt = Prompt(message)
+    fun sendMessage(prompt: Prompt): Generation {
         val response = client.call(prompt)
-        return response.result.output.content
+        return response.result
     }
 }
