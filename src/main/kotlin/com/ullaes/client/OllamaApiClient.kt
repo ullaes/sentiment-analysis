@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component
 
 
 @Component
-class OllamaClient(
+class OllamaApiClient(
     properties: OllamaClientProperties
 ) {
 
