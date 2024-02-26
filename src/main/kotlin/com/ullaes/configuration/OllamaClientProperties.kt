@@ -10,5 +10,9 @@ data class OllamaClientProperties(
 
 data class OllamaOptions(
     val model: String,
-    val temperature: Float
+    val temperature: Float,
+    val topK: Int,
+    val topP: Float,
+    val frequencyPenalty: Float,
+    val presencePenalty: Float
 )

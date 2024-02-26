@@ -10,4 +10,8 @@ ai:
     url: "http://localhost:11434"
     options:
       model: "openchat"
-      temperature: 0.3f
+      temperature: 0.8f
+      top_k: 100
+      top_p: 0.25f
+      frequency_penalty: 0f
+      presence_penalty: 0f
